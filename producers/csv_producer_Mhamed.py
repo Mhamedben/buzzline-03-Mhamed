@@ -1,12 +1,11 @@
 """
-csv_producer_case.py
+csv_producer_Mhamed.py
 
 Stream numeric data to a Kafka topic.
 
 It is common to transfer csv data as JSON so 
 each field is clearly labeled. 
 """
-
 #####################################
 # Import Modules
 #####################################
@@ -16,10 +15,10 @@ import os
 import sys
 import time  # control message intervals
 import pathlib  # work with file paths
-import csv  # handle CSV data
+import pandas as pd  # use Pandas for handling CSV data
 import json  # work with JSON data
 from datetime import datetime  # work with timestamps
-
+import json
 # Import external packages
 from dotenv import load_dotenv
 
@@ -48,20 +47,16 @@ def get_kafka_topic() -> str:
     logger.info(f"Kafka topic: {topic}")
     return topic
 
-
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
     interval = int(os.getenv("SMOKER_INTERVAL_SECONDS", 1))
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
-
 #####################################
 # Set up Paths
 #####################################
 
-# The parent directory of this file is its folder.
-# Go up one more parent level to get the project root.
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 logger.info(f"Project root: {PROJECT_ROOT}")
 
@@ -70,45 +65,47 @@ DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
 # Set the name of the data file
-DATA_FILE = DATA_FOLDER.joinpath("smoker_temps.csv")
+DATA_FILE = DATA_FOLDER.joinpath("smoker_temps.csv")  # Update with your custom CSV file
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
 # Message Generator
 #####################################
 
-
 def generate_messages(file_path: pathlib.Path):
     """
-    Read from a csv file and yield records one by one, continuously.
+    Read from a CSV file and yield records one by one, continuously.
 
     Args:
         file_path (pathlib.Path): Path to the CSV file.
 
     Yields:
-        str: CSV row formatted as a string.
+        dict: Custom message with fields such as temperature, timestamp, and custom fields.
     """
     while True:
         try:
             logger.info(f"Opening data file in read mode: {DATA_FILE}")
-            with open(DATA_FILE, "r") as csv_file:
-                logger.info(f"Reading data from file: {DATA_FILE}")
+            
+            # Use pandas to read the CSV file
+            df = pd.read_csv(DATA_FILE)
+            logger.info(f"Loaded CSV data into DataFrame.")
 
-                csv_reader = csv.DictReader(csv_file)
-                for row in csv_reader:
-                    # Ensure required fields are present
-                    if "temperature" not in row:
-                        logger.error(f"Missing 'temperature' column in row: {row}")
-                        continue
+            for index, row in df.iterrows():
+                # Ensure required fields are present
+                if "temperature" not in row:
+                    logger.error(f"Missing 'temperature' column in row: {row}")
+                    continue
 
-                    # Generate a timestamp and prepare the message
-                    current_timestamp = datetime.utcnow().isoformat()
-                    message = {
-                        "timestamp": current_timestamp,
-                        "temperature": float(row["temperature"]),
-                    }
-                    logger.debug(f"Generated message: {message}")
-                    yield message
+                # Custom message format (simple change)
+                message = {
+                    "timestamp": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+                    "temperature": f"{row['temperature']} C",  # Added a unit of measurement (Celsius)
+                    "sensor_status": "active"  # A simple custom field added
+                }
+
+                logger.debug(f"Generated message: {message}")
+                yield message
+
         except FileNotFoundError:
             logger.error(f"File not found: {file_path}. Exiting.")
             sys.exit(1)
@@ -134,7 +131,7 @@ def main():
     logger.info("START producer.")
     verify_services()
 
-    # fetch .env content
+    # Fetch .env content
     topic = get_kafka_topic()
     interval_secs = get_message_interval()
 
@@ -179,7 +176,9 @@ def main():
 
 #####################################
 # Conditional Execution
-#####################################
+##################################### 
 
 if __name__ == "__main__":
     main()
+
+
