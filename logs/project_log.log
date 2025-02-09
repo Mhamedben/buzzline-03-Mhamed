@@ -8064,3 +8064,336 @@
 2025-02-08 19:49:27.736 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
 2025-02-08 19:49:28.738 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
 2025-02-08 19:49:29.741 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 19:56:21.992 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-08 19:56:21.994 | INFO     | __main__:<module>:27 - Project root: C:\Users\khalo\DSMM\buzzline-03-Mhamed
+2025-02-08 19:56:21.994 | INFO     | __main__:<module>:29 - Data folder: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data
+2025-02-08 19:56:21.994 | INFO     | __main__:<module>:31 - Data file: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 19:56:21.994 | INFO     | __main__:main:58 - START producer.
+2025-02-08 19:56:22.000 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-08 19:56:26.072 | ERROR    | utils.utils_producer:check_zookeeper_service_is_ready:82 - Error checking Zookeeper readiness: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-02-08 19:56:26.072 | ERROR    | utils.utils_producer:verify_services:114 - Zookeeper is not ready. Please check your Zookeeper setup. Exiting...
+2025-02-08 19:58:42.108 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-08 19:58:42.114 | INFO     | __main__:<module>:27 - Project root: C:\Users\khalo\DSMM\buzzline-03-Mhamed
+2025-02-08 19:58:42.114 | INFO     | __main__:<module>:29 - Data folder: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data
+2025-02-08 19:58:42.114 | INFO     | __main__:<module>:31 - Data file: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 19:58:42.116 | INFO     | __main__:main:58 - START producer.
+2025-02-08 19:58:42.116 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-08 19:58:42.135 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-08 19:58:42.136 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-08 19:58:42.516 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'pLg0KHXWTxy3gGlx8gtEqw', 'controller_id': 1001}
+2025-02-08 19:58:42.519 | INFO     | __main__:get_kafka_topic:18 - Kafka topic: buzzline_json
+2025-02-08 19:58:42.521 | INFO     | __main__:get_message_interval:23 - Message interval: 1 seconds
+2025-02-08 19:58:42.523 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-08 19:58:42.524 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-08 19:58:42.648 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-08 19:58:42.657 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-08 19:58:43.014 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'buzzline_json'.
+2025-02-08 19:58:44.024 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'buzzline_json' created successfully.
+2025-02-08 19:58:44.026 | INFO     | __main__:main:75 - Kafka topic 'buzzline_json' is ready.
+2025-02-08 19:58:44.026 | INFO     | __main__:main:80 - Starting message production to topic 'buzzline_json'...
+2025-02-08 19:58:44.026 | INFO     | __main__:generate_messages:36 - Opening data file in read mode: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 19:58:44.026 | INFO     | __main__:generate_messages:38 - Reading data from file: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 19:58:44.040 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-02-08 19:58:45.046 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-02-08 19:58:46.049 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-02-08 19:58:47.055 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 19:58:48.062 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 19:58:49.071 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-02-08 19:58:50.076 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-02-08 19:58:51.080 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 19:58:52.084 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 19:58:53.094 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 19:58:54.096 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 19:58:55.105 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-02-08 19:58:56.109 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-02-08 19:58:57.118 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 19:58:58.122 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 19:58:59.128 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 19:59:00.134 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 19:59:01.140 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-02-08 19:59:02.147 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 19:59:03.154 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 19:59:04.157 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 19:59:05.161 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-02-08 19:59:06.167 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-02-08 19:59:07.176 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 19:59:08.179 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 19:59:09.188 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 19:59:10.194 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-02-08 19:59:11.199 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 19:59:12.207 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-02-08 19:59:13.210 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-02-08 19:59:14.218 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-02-08 19:59:15.222 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-02-08 19:59:16.235 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 19:59:17.242 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 19:59:18.246 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-02-08 19:59:19.252 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 19:59:20.263 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-02-08 19:59:21.265 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-02-08 19:59:22.269 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 19:59:23.276 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 19:59:24.278 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-02-08 19:59:25.285 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-02-08 19:59:26.289 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 19:59:27.295 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 19:59:28.301 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 19:59:29.310 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 19:59:30.313 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-02-08 19:59:31.316 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 19:59:32.321 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-02-08 19:59:33.326 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 19:59:34.334 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-02-08 19:59:35.338 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 19:59:36.346 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-02-08 19:59:37.349 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 19:59:38.355 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 19:59:39.363 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 19:59:40.368 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 19:59:41.371 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-02-08 19:59:42.378 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 19:59:43.381 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 19:59:44.387 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 19:59:45.391 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 19:59:46.393 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-02-08 19:59:47.401 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-02-08 19:59:48.407 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 19:59:49.415 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 19:59:50.428 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-02-08 19:59:51.432 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 19:59:52.438 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-02-08 19:59:53.443 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 19:59:54.451 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 19:59:55.457 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-02-08 19:59:56.465 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-02-08 19:59:57.469 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 19:59:58.478 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-02-08 19:59:59.485 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-02-08 20:00:00.488 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-02-08 20:00:01.493 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-02-08 20:00:02.499 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:00:03.504 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-02-08 20:00:04.512 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Eve'}
+2025-02-08 20:00:05.520 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:00:06.528 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-02-08 20:00:07.533 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:00:08.540 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:00:09.546 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:00:10.551 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:00:11.558 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:00:12.563 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-02-08 20:00:13.569 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-02-08 20:00:14.573 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:00:15.576 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-02-08 20:00:16.579 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:00:17.589 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Charlie'}
+2025-02-08 20:00:18.593 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-02-08 20:00:19.603 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:00:20.608 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:00:21.612 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:00:22.617 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-02-08 20:00:23.628 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 20:00:24.630 | INFO     | __main__:generate_messages:36 - Opening data file in read mode: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 20:00:24.630 | INFO     | __main__:generate_messages:38 - Reading data from file: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 20:00:24.639 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-02-08 20:00:25.644 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-02-08 20:00:26.653 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-02-08 20:00:27.658 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:00:28.664 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:00:29.668 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-02-08 20:00:30.675 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-02-08 20:00:31.683 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:00:32.689 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:00:33.692 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 20:00:34.707 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:00:35.709 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-02-08 20:00:36.718 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-02-08 20:00:37.722 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 20:00:38.732 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:00:39.738 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:00:40.747 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 20:00:41.756 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-02-08 20:00:42.763 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:00:43.766 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:00:44.775 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 20:00:45.780 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-02-08 20:00:46.789 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-02-08 20:00:47.796 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:00:48.802 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 20:00:49.810 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 20:00:50.816 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-02-08 20:00:51.824 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:00:52.830 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-02-08 20:00:53.837 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-02-08 20:00:54.842 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-02-08 20:00:55.850 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-02-08 20:00:56.856 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:00:57.861 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:00:58.868 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-02-08 20:00:59.876 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 20:01:00.883 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-02-08 20:01:01.886 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-02-08 20:01:02.896 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:01:03.901 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:01:04.908 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-02-08 20:01:05.911 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-02-08 20:01:06.918 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:01:07.925 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 20:01:08.931 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:01:09.936 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 20:01:10.941 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-02-08 20:01:11.944 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:01:12.950 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-02-08 20:01:13.955 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:01:14.961 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-02-08 20:01:15.970 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:01:16.974 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-02-08 20:01:17.978 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:01:18.981 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 20:01:19.990 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:01:20.994 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:01:22.000 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-02-08 20:01:23.006 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:01:24.015 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 20:01:25.019 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:01:26.025 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 20:01:27.028 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-02-08 20:01:28.037 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-02-08 20:01:29.041 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:01:30.044 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:01:31.048 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-02-08 20:01:32.054 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:01:33.057 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-02-08 20:01:34.061 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:01:35.065 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 20:01:36.069 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-02-08 20:01:37.075 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-02-08 20:01:38.085 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 20:01:39.087 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-02-08 20:01:40.093 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-02-08 20:01:41.096 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-02-08 20:01:42.100 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-02-08 20:01:43.108 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:01:44.112 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-02-08 20:01:45.118 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Eve'}
+2025-02-08 20:01:46.122 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:01:47.129 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-02-08 20:01:48.135 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:01:49.139 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:01:50.144 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:01:51.155 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:01:52.157 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:01:53.167 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-02-08 20:01:54.174 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-02-08 20:01:55.181 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:01:56.183 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-02-08 20:01:57.190 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:01:58.194 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Charlie'}
+2025-02-08 20:01:59.200 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-02-08 20:02:00.203 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:02:01.207 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:02:02.216 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:02:03.218 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-02-08 20:02:04.222 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 20:02:05.227 | INFO     | __main__:generate_messages:36 - Opening data file in read mode: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 20:02:05.228 | INFO     | __main__:generate_messages:38 - Reading data from file: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\buzz.json
+2025-02-08 20:02:05.230 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-02-08 20:02:06.234 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-02-08 20:02:07.237 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-02-08 20:02:08.246 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:02:09.251 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:02:10.256 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-02-08 20:02:11.258 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-02-08 20:02:12.261 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:02:13.266 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:02:14.272 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 20:02:15.278 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:02:16.286 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-02-08 20:02:17.291 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-02-08 20:02:18.301 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 20:02:19.308 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:02:20.313 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:02:21.315 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 20:02:22.324 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-02-08 20:02:23.330 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:02:24.334 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:02:25.346 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 20:02:26.351 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-02-08 20:02:27.357 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-02-08 20:02:28.364 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:02:29.371 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 20:02:30.378 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 20:02:31.384 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-02-08 20:02:32.391 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:02:33.415 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-02-08 20:02:34.418 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-02-08 20:02:35.426 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-02-08 20:02:36.430 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-02-08 20:02:37.436 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:02:38.438 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:02:39.448 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-02-08 20:02:40.455 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-02-08 20:02:41.463 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-02-08 20:02:42.468 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-02-08 20:02:43.476 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:02:44.479 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:02:45.484 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-02-08 20:02:46.492 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-02-08 20:02:47.497 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:02:48.503 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-08 20:02:49.510 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:02:50.516 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 20:02:51.523 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-02-08 20:02:52.528 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:02:53.537 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-02-08 20:02:54.543 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:02:55.551 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-02-08 20:02:56.558 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:02:57.560 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-02-08 20:02:58.562 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:02:59.566 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-02-08 20:03:00.570 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:03:01.575 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:03:02.582 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-02-08 20:03:03.587 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:03:04.596 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 20:03:05.599 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:03:06.611 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 20:03:07.617 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-02-08 20:03:08.624 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-02-08 20:03:09.629 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:03:10.630 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-02-08 20:03:11.637 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-02-08 20:03:12.644 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-02-08 20:03:13.652 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-02-08 20:03:14.658 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:03:15.664 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-02-08 20:03:16.670 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-02-08 20:03:17.675 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-02-08 20:03:18.680 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-02-08 20:03:19.683 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-02-08 20:03:20.690 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-02-08 20:03:21.699 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-02-08 20:03:22.704 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-02-08 20:03:23.714 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-02-08 20:03:24.717 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-02-08 20:03:25.726 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Eve'}
+2025-02-08 20:03:26.731 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:03:27.736 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-02-08 20:03:28.745 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:03:29.747 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-02-08 20:03:30.755 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:03:31.760 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-02-08 20:03:32.762 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-02-08 20:03:33.772 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-02-08 20:03:34.802 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-02-08 20:03:35.805 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-02-08 20:03:36.809 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-02-08 20:03:37.817 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-02-08 20:03:38.820 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Charlie'}
+2025-02-08 20:03:39.825 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-02-08 20:03:40.833 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-02-08 20:03:41.836 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-02-08 20:03:42.840 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-02-08 20:03:43.846 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Diana'}
+2025-02-08 20:03:44.850 | INFO     | __main__:main:84 - Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}

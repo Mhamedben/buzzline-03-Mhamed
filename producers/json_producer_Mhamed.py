@@ -27,7 +27,7 @@ PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 logger.info(f"Project root: {PROJECT_ROOT}")
 DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
-DATA_FILE = DATA_FOLDER.joinpath("buzz.json")
+DATA_FILE = DATA_FOLDER.joinpath("buzz1.json")
 logger.info(f"Data file: {DATA_FILE}")
 
 def generate_messages(file_path: pathlib.Path):
