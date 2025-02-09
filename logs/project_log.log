@@ -13690,3 +13690,42 @@
 2025-02-09 11:46:46.845 | INFO     | __main__:generate_messages:90 - Opening data file in read mode: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\smoker_temps.csv
 2025-02-09 11:46:47.118 | ERROR    | __main__:generate_messages:97 - Missing required 'timestamp' or 'value' columns in the CSV file.
 2025-02-09 11:46:47.120 | INFO     | __main__:main:174 - Kafka producer closed.
+2025-02-09 12:04:56.124 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 12:04:56.124 | INFO     | __main__:<module>:61 - Project root: C:\Users\khalo\DSMM\buzzline-03-Mhamed
+2025-02-09 12:04:56.129 | INFO     | __main__:<module>:65 - Data folder: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data
+2025-02-09 12:04:56.129 | INFO     | __main__:<module>:69 - Data file: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\smoker_temps.csv
+2025-02-09 12:04:56.129 | INFO     | __main__:main:131 - START producer.
+2025-02-09 12:04:56.130 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-09 12:04:56.145 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-09 12:04:56.146 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 12:04:56.517 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'hoKN-sz-T82Z-_LWzp0nbg', 'controller_id': 1001}
+2025-02-09 12:04:56.519 | INFO     | __main__:get_kafka_topic:47 - Kafka topic: smoker_csv
+2025-02-09 12:04:56.519 | INFO     | __main__:get_message_interval:53 - Message interval: 5 seconds
+2025-02-09 12:04:56.519 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 12:04:56.519 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-09 12:04:56.656 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-09 12:04:56.659 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 12:04:57.018 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'smoker_csv' already exists. Clearing it out...
+2025-02-09 12:04:57.018 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 12:04:57.433 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'smoker_csv': list indices must be integers or slices, not ConfigResource
+2025-02-09 12:04:57.433 | INFO     | __main__:main:154 - Kafka topic 'smoker_csv' is ready.
+2025-02-09 12:04:57.441 | INFO     | __main__:main:160 - Starting message production to topic 'smoker_csv'...
+2025-02-09 12:04:57.442 | INFO     | __main__:generate_messages:87 - Opening data file in read mode: C:\Users\khalo\DSMM\buzzline-03-Mhamed\data\smoker_temps.csv
+2025-02-09 12:04:57.452 | INFO     | __main__:generate_messages:91 - Loaded CSV data into DataFrame.
+2025-02-09 12:04:57.471 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:04:57', 'temperature': '70.4 C', 'sensor_status': 'active'}
+2025-02-09 12:05:02.477 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:02', 'temperature': '70.8 C', 'sensor_status': 'active'}
+2025-02-09 12:05:07.483 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:07', 'temperature': '71.2 C', 'sensor_status': 'active'}
+2025-02-09 12:05:12.487 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:12', 'temperature': '71.6 C', 'sensor_status': 'active'}
+2025-02-09 12:05:17.495 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:17', 'temperature': '72.0 C', 'sensor_status': 'active'}
+2025-02-09 12:05:22.501 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:22', 'temperature': '72.4 C', 'sensor_status': 'active'}
+2025-02-09 12:05:27.503 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:27', 'temperature': '72.8 C', 'sensor_status': 'active'}
+2025-02-09 12:05:32.511 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:32', 'temperature': '73.2 C', 'sensor_status': 'active'}
+2025-02-09 12:05:37.519 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:37', 'temperature': '73.6 C', 'sensor_status': 'active'}
+2025-02-09 12:05:42.522 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:42', 'temperature': '74.0 C', 'sensor_status': 'active'}
+2025-02-09 12:05:47.529 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:47', 'temperature': '74.4 C', 'sensor_status': 'active'}
+2025-02-09 12:05:52.535 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:52', 'temperature': '74.8 C', 'sensor_status': 'active'}
+2025-02-09 12:05:57.538 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:05:57', 'temperature': '75.2 C', 'sensor_status': 'active'}
+2025-02-09 12:06:02.550 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:06:02', 'temperature': '75.6 C', 'sensor_status': 'active'}
+2025-02-09 12:06:07.552 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:06:07', 'temperature': '76.0 C', 'sensor_status': 'active'}
+2025-02-09 12:06:12.555 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:06:12', 'temperature': '76.4 C', 'sensor_status': 'active'}
+2025-02-09 12:06:17.562 | INFO     | __main__:main:164 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09 17:06:17', 'temperature': '76.8 C', 'sensor_status': 'active'}
