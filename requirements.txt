@@ -101,6 +101,9 @@ pandas
 # ======================================================
 # KAFKA MESSAGE BROKER INTEGRATION
 # ======================================================
+six
+kafka-python-ng
+
 
 # Apache Kafka Python client
 kafka-python
