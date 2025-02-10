@@ -1,10 +1,7 @@
 """
 csv_producer_Mhamed.py
 
-Stream numeric data to a Kafka topic.
 
-It is common to transfer csv data as JSON so 
-each field is clearly labeled. 
 """
 #####################################
 # Import Modules

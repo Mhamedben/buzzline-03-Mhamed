@@ -18261,3 +18261,100 @@
 2025-02-09 20:41:17.291 | INFO     | __main__:get_kafka_topic:21 - Kafka topic: smoker_topic
 2025-02-09 20:41:17.291 | INFO     | __main__:get_kafka_server:27 - Kafka server: localhost:9092
 2025-02-09 20:41:21.384 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:21', 'temperature': '89.2 C', 'sensor_status': 'active'}
+2025-02-09 20:41:26.395 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:26', 'temperature': '89.6 C', 'sensor_status': 'active'}
+2025-02-09 20:41:31.400 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:31', 'temperature': '90.0 C', 'sensor_status': 'active'}
+2025-02-09 20:41:36.403 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:36', 'temperature': '90.4 C', 'sensor_status': 'active'}
+2025-02-09 20:41:41.410 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:41', 'temperature': '90.8 C', 'sensor_status': 'active'}
+2025-02-09 20:41:46.413 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:46', 'temperature': '91.2 C', 'sensor_status': 'active'}
+2025-02-09 20:41:51.417 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:51', 'temperature': '91.6 C', 'sensor_status': 'active'}
+2025-02-09 20:41:56.419 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:41:56', 'temperature': '92.0 C', 'sensor_status': 'active'}
+2025-02-09 20:42:01.427 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:01', 'temperature': '92.4 C', 'sensor_status': 'active'}
+2025-02-09 20:42:06.434 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:06', 'temperature': '92.8 C', 'sensor_status': 'active'}
+2025-02-09 20:42:11.437 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:11', 'temperature': '93.2 C', 'sensor_status': 'active'}
+2025-02-09 20:42:11.610 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 20:42:12.146 | INFO     | __main__:main:114 - START consumer.
+2025-02-09 20:42:12.146 | INFO     | __main__:get_kafka_topic:29 - Kafka topic: smoker_topic
+2025-02-09 20:42:12.146 | INFO     | __main__:get_kafka_consumer_group_id:35 - Kafka consumer group id: smoker_group
+2025-02-09 20:42:12.146 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.146 | INFO     | __main__:main:119 - Consumer: Topic 'smoker_topic' and group 'smoker_group'...
+2025-02-09 20:42:12.146 | INFO     | __main__:main:120 - Rolling window size: 10
+2025-02-09 20:42:12.146 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 20:42:12.146 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_topic' and group ID='smoker_group'.
+2025-02-09 20:42:12.282 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-09 20:42:12.283 | INFO     | __main__:main:126 - Polling messages from topic 'smoker_topic'...
+2025-02-09 20:42:12.612 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:01', 'temperature': '87.6 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.612 | INFO     | __main__:process_message:92 - Temperature: 87.6°C, Timestamp: 2025-02-10 01:41:01
+2025-02-09 20:42:12.612 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.627 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:06', 'temperature': '88.0 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.629 | INFO     | __main__:process_message:92 - Temperature: 88.0°C, Timestamp: 2025-02-10 01:41:06
+2025-02-09 20:42:12.630 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.633 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:11', 'temperature': '88.4 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.634 | INFO     | __main__:process_message:92 - Temperature: 88.4°C, Timestamp: 2025-02-10 01:41:11
+2025-02-09 20:42:12.635 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.637 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:16', 'temperature': '88.8 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.637 | INFO     | __main__:process_message:92 - Temperature: 88.8°C, Timestamp: 2025-02-10 01:41:16
+2025-02-09 20:42:12.637 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.641 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:21', 'temperature': '89.2 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.642 | INFO     | __main__:process_message:92 - Temperature: 89.2°C, Timestamp: 2025-02-10 01:41:21
+2025-02-09 20:42:12.642 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.645 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:26', 'temperature': '89.6 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.645 | INFO     | __main__:process_message:92 - Temperature: 89.6°C, Timestamp: 2025-02-10 01:41:26
+2025-02-09 20:42:12.645 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.648 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:31', 'temperature': '90.0 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.649 | INFO     | __main__:process_message:92 - Temperature: 90.0°C, Timestamp: 2025-02-10 01:41:31
+2025-02-09 20:42:12.649 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.649 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:36', 'temperature': '90.4 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.649 | INFO     | __main__:process_message:92 - Temperature: 90.4°C, Timestamp: 2025-02-10 01:41:36
+2025-02-09 20:42:12.649 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.649 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:41', 'temperature': '90.8 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.649 | INFO     | __main__:process_message:92 - Temperature: 90.8°C, Timestamp: 2025-02-10 01:41:41
+2025-02-09 20:42:12.649 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.655 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:46', 'temperature': '91.2 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.656 | INFO     | __main__:process_message:92 - Temperature: 91.2°C, Timestamp: 2025-02-10 01:41:46
+2025-02-09 20:42:12.656 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.657 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:12.659 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:51', 'temperature': '91.6 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.659 | INFO     | __main__:process_message:92 - Temperature: 91.6°C, Timestamp: 2025-02-10 01:41:51
+2025-02-09 20:42:12.659 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.660 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:12.661 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:41:56', 'temperature': '92.0 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.661 | INFO     | __main__:process_message:92 - Temperature: 92.0°C, Timestamp: 2025-02-10 01:41:56
+2025-02-09 20:42:12.661 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.661 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:12.665 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:01', 'temperature': '92.4 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.665 | INFO     | __main__:process_message:92 - Temperature: 92.4°C, Timestamp: 2025-02-10 01:42:01
+2025-02-09 20:42:12.666 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.666 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:12.666 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:06', 'temperature': '92.8 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.666 | INFO     | __main__:process_message:92 - Temperature: 92.8°C, Timestamp: 2025-02-10 01:42:06
+2025-02-09 20:42:12.666 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.666 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:12.666 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:11', 'temperature': '93.2 C', 'sensor_status': 'active'}
+2025-02-09 20:42:12.666 | INFO     | __main__:process_message:92 - Temperature: 93.2°C, Timestamp: 2025-02-10 01:42:11
+2025-02-09 20:42:12.666 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:12.674 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:16.441 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:16', 'temperature': '93.6 C', 'sensor_status': 'active'}
+2025-02-09 20:42:16.446 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:16', 'temperature': '93.6 C', 'sensor_status': 'active'}
+2025-02-09 20:42:16.447 | INFO     | __main__:process_message:92 - Temperature: 93.6°C, Timestamp: 2025-02-10 01:42:16
+2025-02-09 20:42:16.447 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:16.448 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:21.443 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:21', 'temperature': '94.0 C', 'sensor_status': 'active'}
+2025-02-09 20:42:21.445 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:21', 'temperature': '94.0 C', 'sensor_status': 'active'}
+2025-02-09 20:42:21.448 | INFO     | __main__:process_message:92 - Temperature: 94.0°C, Timestamp: 2025-02-10 01:42:21
+2025-02-09 20:42:21.448 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:21.448 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:26.446 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:26', 'temperature': '94.4 C', 'sensor_status': 'active'}
+2025-02-09 20:42:26.451 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:26', 'temperature': '94.4 C', 'sensor_status': 'active'}
+2025-02-09 20:42:26.451 | INFO     | __main__:process_message:92 - Temperature: 94.4°C, Timestamp: 2025-02-10 01:42:26
+2025-02-09 20:42:26.453 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:26.454 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:31.449 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:31', 'temperature': '94.8 C', 'sensor_status': 'active'}
+2025-02-09 20:42:31.453 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:31', 'temperature': '94.8 C', 'sensor_status': 'active'}
+2025-02-09 20:42:31.453 | INFO     | __main__:process_message:92 - Temperature: 94.8°C, Timestamp: 2025-02-10 01:42:31
+2025-02-09 20:42:31.466 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:31.468 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
+2025-02-09 20:42:36.455 | INFO     | __main__:main:164 - Sent message to topic 'smoker_topic': {'timestamp': '2025-02-10 01:42:36', 'temperature': '95.2 C', 'sensor_status': 'active'}
+2025-02-09 20:42:36.458 | INFO     | __main__:process_message:84 - Processed JSON message: {'timestamp': '2025-02-10 01:42:36', 'temperature': '95.2 C', 'sensor_status': 'active'}
+2025-02-09 20:42:36.458 | INFO     | __main__:process_message:92 - Temperature: 95.2°C, Timestamp: 2025-02-10 01:42:36
+2025-02-09 20:42:36.463 | INFO     | __main__:get_rolling_window_size:48 - Rolling window size: 10
+2025-02-09 20:42:36.463 | INFO     | __main__:get_stall_threshold:42 - Max stall temperature range: 0.2 F
